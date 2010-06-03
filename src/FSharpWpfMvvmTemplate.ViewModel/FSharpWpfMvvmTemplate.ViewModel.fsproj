@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{1876de25-6fb5-42d5-8d19-f318bd81a411}</ProjectGuid>
+    <ProjectGuid>{622f59e3-cd2a-4b26-9cd9-eeeb2cf5148a}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>FSharpWpfMvvmTemplate.Core</RootNamespace>
-    <AssemblyName>FSharpWpfMvvmTemplate.Core</AssemblyName>
+    <RootNamespace>FSharpWpfMvvmTemplate.ViewModel</RootNamespace>
+    <AssemblyName>FSharpWpfMvvmTemplate.ViewModel</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <Name>FSharpWpfMvvmTemplate.Core</Name>
+    <Name>FSharpWpfMvvmTemplate.ViewModel</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,7 +20,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\FSharpWpfMvvmTemplate.Core.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\FSharpWpfMvvmTemplate.ViewModel.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,19 +29,17 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\FSharpWpfMvvmTemplate.Core.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\FSharpWpfMvvmTemplate.ViewModel.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App.xaml.fs" />
+    <Compile Include="ViewModelBase.fs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />

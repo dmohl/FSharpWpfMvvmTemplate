@@ -4,8 +4,8 @@ This resource dictionary is used by the MainWindow.
 <ResourceDictionary
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-  xmlns:vm="clr-namespace:DemoApp.ViewModel"
-  xmlns:vw="clr-namespace:DemoApp.View"
+  xmlns:vm="clr-namespace:FSharpWpfMvvmTemplate.ViewModel"
+  xmlns:vw="clr-namespace:FSharpWpfMvvmTemplate.View"
   >
 
   <!-- 
