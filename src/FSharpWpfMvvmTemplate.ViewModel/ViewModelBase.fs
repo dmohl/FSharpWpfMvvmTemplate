@@ -7,31 +7,22 @@ open System.Diagnostics
 [<AbstractClass>] 
 type ViewModelBase() =
     let mutable _displayName = ""
+    let event = Event<PropertyChangedEventHandler, PropertyChangedEventArgs>()
     abstract member OnDispose : unit -> unit
     default x.OnDispose() = "" |> ignore
     member x.DisplayName 
         with get() = _displayName 
         and set(value) = _displayName <- value;
-    
-    //interface INotifyPropertyChanged with
+    interface INotifyPropertyChanged with
+        member x.add_PropertyChanged(e) = 
+            event.Publish.AddHandler(e)
+        member x.remove_PropertyChanged(e) = 
+            event.Publish.RemoveHandler(e)    
     interface IDisposable with
         member x.Dispose () =
             x.OnDispose()
+                        
 
-
-//        #region INotifyPropertyChanged Members
-//
-//        /// <summary>
-//        /// Raised when a property on this object has a new value.
-//        /// </summary>
-//        public event PropertyChangedEventHandler PropertyChanged;
-//
-//        /// <summary>
-//        /// Raises this object's PropertyChanged event.
-//        /// </summary>
-//        /// <param name="propertyName">The property that has a new value.</param>
-//        protected virtual void OnPropertyChanged(string propertyName)
-//        {
 //            this.VerifyPropertyName(propertyName);
 //
 //            PropertyChangedEventHandler handler = this.PropertyChanged;

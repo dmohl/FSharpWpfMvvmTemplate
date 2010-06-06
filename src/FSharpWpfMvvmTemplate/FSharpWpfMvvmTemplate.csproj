@@ -109,6 +109,10 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FSharpWpfMvvmTemplate.Core\FSharpWpfMvvmTemplate.Core.fsproj">
+      <Project>{0C488889-C3E7-4D79-8F14-A032CE50E290}</Project>
+      <Name>FSharpWpfMvvmTemplate.Core</Name>
+    </ProjectReference>
     <ProjectReference Include="..\FSharpWpfMvvmTemplate.ViewModel\FSharpWpfMvvmTemplate.ViewModel.fsproj">
       <Project>{622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A}</Project>
       <Name>FSharpWpfMvvmTemplate.ViewModel</Name>

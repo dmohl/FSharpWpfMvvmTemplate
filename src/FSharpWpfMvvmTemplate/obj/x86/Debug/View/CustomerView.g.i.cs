@@ -10,6 +10,7 @@
 //------------------------------------------------------------------------------
 
 using FSharpWpfMvvmTemplate.View;
+using FSharpWpfMvvmTemplate.ViewModel;
 using System;
 using System.Diagnostics;
 using System.Windows;

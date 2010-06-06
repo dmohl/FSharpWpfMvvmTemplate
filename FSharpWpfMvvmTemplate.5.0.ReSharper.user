@@ -9,7 +9,6 @@
   <RecentFiles>
     <RecentFiles>
       <File id="d:Miscellaneous Files/f:MainWindow.g.cs/l:C!?git?FSharpWpfMvvmTemplate?src?FSharpWpfMvvmTemplate?obj?x86?Debug?MainWindow.g.cs" caret="1236" fromTop="4" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:MainWindow.xaml" caret="42" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml" caret="47" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:MainWindowResources.xaml" caret="327" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:MainWindow.xaml.cs" caret="71" fromTop="1" />
@@ -17,33 +16,43 @@
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/d:View/f:AllCustomersView.xaml.cs" caret="31" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/d:View/f:CustomerView.xaml" caret="242" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/d:View/f:AllCustomersView.xaml" caret="47" fromTop="0" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="506" fromTop="9" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml.cs" caret="1444" fromTop="8" />
+      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:MainWindow.xaml" caret="241" fromTop="3" />
+      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml.cs" caret="1444" fromTop="25" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="534" fromTop="14" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="616" fromTop="6" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="376" fromTop="3" />
     </RecentFiles>
     <RecentEdits>
-      <File id="d:Miscellaneous Files/f:MainWindow.g.cs/l:C!?git?FSharpWpfMvvmTemplate?src?FSharpWpfMvvmTemplate?obj?x86?Debug?MainWindow.g.cs" caret="1236" fromTop="4" />
-      <File id="d:Miscellaneous Files/f:MainWindow.g.cs/l:C!?git?FSharpWpfMvvmTemplate?src?FSharpWpfMvvmTemplate?obj?x86?Debug?MainWindow.g.cs" caret="1236" fromTop="0" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:MainWindow.xaml" caret="42" fromTop="0" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml" caret="47" fromTop="0" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:MainWindowResources.xaml" caret="321" fromTop="2" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml.cs" caret="109" fromTop="2" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:MainWindow.xaml.cs" caret="71" fromTop="1" />
-      <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/d:View/f:CustomerView.xaml.cs" caret="31" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/d:View/f:AllCustomersView.xaml.cs" caret="31" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/d:View/f:AllCustomersView.xaml" caret="47" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/d:View/f:CustomerView.xaml" caret="242" fromTop="3" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="2503" fromTop="9" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="1385" fromTop="11" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="533" fromTop="9" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="537" fromTop="3" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="475" fromTop="5" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="280" fromTop="3" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="368" fromTop="8" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="192" fromTop="3" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="2250" fromTop="9" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="1132" fromTop="11" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="785" fromTop="9" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="727" fromTop="5" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml.cs" caret="203" fromTop="2" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml.cs" caret="245" fromTop="0" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml.cs" caret="735" fromTop="6" />
       <File id="341B4C47-BDAB-4489-854C-68A0BFFDCECE/f:App.xaml.cs" caret="603" fromTop="2" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="272" fromTop="2" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="813" fromTop="0" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="785" fromTop="3" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="608" fromTop="9" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="608" fromTop="1" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="608" fromTop="0" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="534" fromTop="5" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="534" fromTop="8" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="534" fromTop="7" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="147" fromTop="6" />
+      <File id="0C488889-C3E7-4D79-8F14-A032CE50E290/f:RelayCommand.fs" caret="534" fromTop="2" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="689" fromTop="9" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="689" fromTop="9" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="689" fromTop="6" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="111" fromTop="3" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="346" fromTop="3" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="346" fromTop="3" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:ViewModelBase.fs" caret="616" fromTop="6" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:WorkspaceViewModule.fs" caret="546" fromTop="8" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
