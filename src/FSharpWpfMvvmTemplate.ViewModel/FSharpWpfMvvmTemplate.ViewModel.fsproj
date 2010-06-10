@@ -46,6 +46,7 @@
     <Compile Include="WorkspaceViewModule.fs" />
     <Compile Include="MainWindowViewModel.fs" />
     <Compile Include="MainWindowCommandViewModel.fs" />
+    <Compile Include="CustomerViewModel.fs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FSharpWpfMvvmTemplate.Core\FSharpWpfMvvmTemplate.Core.fsproj">
