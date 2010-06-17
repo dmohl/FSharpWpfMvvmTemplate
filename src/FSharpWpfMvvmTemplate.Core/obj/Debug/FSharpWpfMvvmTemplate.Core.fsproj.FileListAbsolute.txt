@@ -1,6 +1,0 @@
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.Core\bin\Debug\FSharpWpfMvvmTemplate.Core.XML
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.Core\bin\Debug\FSharpWpfMvvmTemplate.Core.dll
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.Core\bin\Debug\FSharpWpfMvvmTemplate.Core.pdb
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.Core\obj\Debug\ResolveAssemblyReference.cache
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.Core\obj\Debug\FSharpWpfMvvmTemplate.Core.dll
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.Core\obj\Debug\FSharpWpfMvvmTemplate.Core.pdb
