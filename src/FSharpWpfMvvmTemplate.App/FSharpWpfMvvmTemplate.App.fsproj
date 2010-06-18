@@ -38,10 +38,11 @@
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <ItemGroup>
     <Compile Include="App.fs" />
+    <Resource Include="ApplicationResources.xaml" />
     <Resource Include="MainWindow.xaml" />
     <Resource Include="watermark.png" />
     <Resource Include="ExpenseItHome.xaml" />
-    <Resource Include="ExpenseReportPage.xaml" />
+    <Resource Include="ExpenseReport.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Accessibility" />
