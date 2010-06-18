@@ -9,25 +9,27 @@
   <RecentFiles>
     <RecentFiles>
       <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:RelayCommand.fs" caret="180" fromTop="6" />
-      <File id="F371985B-281A-46F3-9A68-9F912CD1D9F7/f:MainView.xaml" caret="174" fromTop="1" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainViewModel.fs" caret="0" fromTop="0" />
-      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="304" fromTop="9" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainWindowModel.fs" caret="0" fromTop="0" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="454" fromTop="10" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:MainWindow.xaml" caret="421" fromTop="0" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:ExpenseItHome.xaml" caret="2139" fromTop="2" />
     </RecentFiles>
     <RecentEdits>
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainViewModel.fs" caret="534" fromTop="28" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainViewModel.fs" caret="43" fromTop="0" />
       <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:RelayCommand.fs" caret="453" fromTop="12" />
       <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:RelayCommand.fs" caret="45" fromTop="1" />
       <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:RelayCommand.fs" caret="448" fromTop="12" />
       <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:RelayCommand.fs" caret="448" fromTop="12" />
       <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:RelayCommand.fs" caret="180" fromTop="6" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainViewModel.fs" caret="506" fromTop="19" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainViewModel.fs" caret="371" fromTop="11" />
-      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainViewModel.fs" caret="194" fromTop="6" />
-      <File id="F371985B-281A-46F3-9A68-9F912CD1D9F7/f:MainView.xaml" caret="174" fromTop="1" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainWindowModel.fs" caret="506" fromTop="19" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainWindowModel.fs" caret="371" fromTop="11" />
+      <File id="622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A/f:MainWindowModel.fs" caret="194" fromTop="6" />
       <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="0" fromTop="8" />
-      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="528" fromTop="15" />
-      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="304" fromTop="9" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="347" fromTop="12" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="524" fromTop="17" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="514" fromTop="15" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="644" fromTop="15" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:App.fs" caret="454" fromTop="10" />
+      <File id="30597BE9-08F8-4832-8AB7-009C00A6A2F2/f:ExpenseItHome.xaml" caret="2139" fromTop="2" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

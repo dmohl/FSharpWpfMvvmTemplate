@@ -7,6 +7,4 @@ C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\bin\Debug\FSharpWpfMv
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\ResolveAssemblyReference.cache
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\FSharpWpfMvvmTemplate.App.exe
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\FSharpWpfMvvmTemplate.App.pdb
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\bin\Debug\FSharpWpfMvvmTemplate.View.dll
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\bin\Debug\FSharpWpfMvvmTemplate.View.pdb
-C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\bin\Debug\FSharpWpfMvvmTemplate.View.xml
+C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\FSharpWpfMvvmTemplate.App.g.resources
