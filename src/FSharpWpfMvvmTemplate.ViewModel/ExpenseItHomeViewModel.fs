@@ -5,7 +5,8 @@ open System.Windows
 open System.Windows.Input
 open System.ComponentModel
 
-type ExpenseItHomeViewModel() =          
+type ExpenseItHomeViewModel() =   
+    inherit ViewModelBase()       
     member x.ViewCommand = 
         new RelayCommand ((fun canExecute -> true), (fun action -> x.ShowMessage)) 
 
