@@ -2,5 +2,10 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="ExpenseIt" Height="350" Width="500">
-    <Frame Source="ExpenseItHome.xaml" />
+    <Window.Resources>
+        <ResourceDictionary Source="ApplicationResources.xaml" />
+    </Window.Resources>
+
+    <Frame Source="{Binding Path=SelectedView}" />
+
 </Window>
