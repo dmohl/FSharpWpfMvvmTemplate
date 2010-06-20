@@ -5,6 +5,9 @@
     <DataTemplate DataType="{x:Type ViewModel:ExpenseItHomeViewModel}">
         <Frame Source="ExpenseItHome.xaml"/>
     </DataTemplate>
+    <DataTemplate DataType="{x:Type ViewModel:ExpenseReportViewModel}">
+        <Frame Source="ExpenseReport.xaml"/>
+    </DataTemplate>
     <Style x:Key="headerTextStyle">
         <Setter Property="Label.VerticalAlignment" Value="Center"></Setter>
         <Setter Property="Label.FontFamily" Value="Trebuchet MS"></Setter>

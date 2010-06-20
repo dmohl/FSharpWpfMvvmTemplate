@@ -8,19 +8,21 @@ open System.Windows.Input
 open System.ComponentModel
 
 type MainWindowViewModel =
-    [<DefaultValue(false)>] val mutable _views : ObservableCollection<ViewModelBase>   
-    new() as x = {_views = new ObservableCollection<ViewModelBase>()} then x.Initialize()
+    [<DefaultValue(false)>] val _views : ObservableCollection<ViewModelBase>
+    [<DefaultValue(false)>] val mutable _collectionView : ICollectionView
+    new() as x = {_views = new ObservableCollection<ViewModelBase>();
+                  _collectionView = null} then x.Initialize()
     member x.Initialize() =
-        let defaultView = new ExpenseItHomeViewModel()
-        x._views.Add(defaultView)              
+        let masterView = new ExpenseItHomeViewModel()
+        masterView.ExpenseReportViewChanged.AddHandler(
+            new EventHandler(
+                fun s e -> (MessageBox.Show("here")
+                            x._collectionView.MoveCurrentToNext() |> ignore)))
+        x._views.Add(masterView)              
         x._views.Add(new ExpenseReportViewModel()) 
-        x.SetActiveView defaultView
-    member x.SelectedView = 
-        let collectionView = CollectionViewSource.GetDefaultView x.Views
-        collectionView.CurrentItem :?> ViewModelBase
+        x._collectionView <- CollectionViewSource.GetDefaultView(x._views)
+    member x.SelectedView = x._collectionView.CurrentItem :?> ViewModelBase
     member x.Views = x._views
     member x.SetActiveView view =
-        let collectionView = CollectionViewSource.GetDefaultView x.Views
-        if collectionView <> null then collectionView.MoveCurrentTo view |> ignore
-
+        if x._collectionView <> null then x._collectionView.MoveCurrentTo view |> ignore
 
