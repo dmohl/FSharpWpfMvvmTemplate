@@ -47,7 +47,6 @@
     <Compile Include="RelayCommand.fs" />
     <Compile Include="ViewModelBase.fs" />
     <Compile Include="ExpenseItHomeViewModel.fs" />
-    <Compile Include="ExpenseReportViewModel.fs" />
     <Compile Include="MainWindowViewModel.fs" />
   </ItemGroup>
   <ItemGroup>

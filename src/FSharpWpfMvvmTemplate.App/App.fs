@@ -7,7 +7,6 @@ open System.Windows.Markup
 open FSharpWpfMvvmTemplate.ViewModel
 
 // Create the View and bind it to the View Model
-//Application.LoadComponent(new System.Uri("/FSharpWpfMvvmTemplate.View;component/ExpenseItHome.xaml", UriKind.Relative)) |> ignore
 let mainWindowViewModel = Application.LoadComponent(
                              new System.Uri("/FSharpWpfMvvmTemplate.App;component/mainwindow.xaml", UriKind.Relative)) :?> Window
 mainWindowViewModel.DataContext <- new MainWindowViewModel() :> obj

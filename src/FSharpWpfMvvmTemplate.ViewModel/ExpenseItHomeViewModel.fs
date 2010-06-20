@@ -12,11 +12,8 @@ open FSharpWpfMvvmTemplate.Model
 type ExpenseItHomeViewModel =   
     [<DefaultValue(false)>] val mutable _collectionView : ICollectionView
     [<DefaultValue(false)>] val mutable _expenseReports : ObservableCollection<Person>
-    [<DefaultValue(false)>] val _expenseReportViewChangedEvent : DelegateEvent<EventHandler>
     new () as x = {_expenseReports = new ObservableCollection<Person>(); 
-                   _collectionView = null; 
-                   _expenseReportViewChangedEvent = new DelegateEvent<EventHandler>() } 
-                   then x.Initialize()
+                   _collectionView = null} then x.Initialize()
     inherit ViewModelBase
     member x.Initialize() =
         x._expenseReports <- x.BuildExpenseReports()
@@ -59,11 +56,8 @@ type ExpenseItHomeViewModel =
         collection.Add(mary)
         collection
     member x.ExpenseReports : ObservableCollection<Person> = x._expenseReports
-    member x.ViewExpenseReportCommand = 
-        new RelayCommand ((fun canExecute -> true), (fun action -> x.ShowExpenseReport)) 
+    member x.ApproveExpenseReportCommand = 
+        new RelayCommand ((fun canExecute -> true), (fun action -> x.ApproveExpenseReport)) 
     member x.SelectedExpenseReport = x._collectionView.CurrentItem :?> Person
-    member x.ShowExpenseReport = x.OnExpenseReportViewChanged()
-    [<CLIEvent>]
-    member x.ExpenseReportViewChanged = x._expenseReportViewChangedEvent.Publish
-    member x.OnExpenseReportViewChanged () =
-        x._expenseReportViewChangedEvent.Trigger([| x; EventArgs.Empty |])
+    member x.ApproveExpenseReport = 
+        MessageBox.Show(sprintf "Expense report approved for %s" x.SelectedExpenseReport.Name) |> ignore
