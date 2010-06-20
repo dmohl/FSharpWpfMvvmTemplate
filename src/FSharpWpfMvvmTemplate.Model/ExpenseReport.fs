@@ -1,6 +1,6 @@
 ﻿namespace FSharpWpfMvvmTemplate.Model
 
-type Person =
+type ExpenseReport =
     { Name : string
       Department : string
       ExpenseLineItems : seq<Expense>}

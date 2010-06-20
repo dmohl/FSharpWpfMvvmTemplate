@@ -42,7 +42,6 @@
     <Resource Include="MainWindow.xaml" />
     <Resource Include="watermark.png" />
     <Resource Include="ExpenseItHome.xaml" />
-    <Resource Include="ExpenseReport.xaml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\FSharpWpfMvvmTemplate.Model\FSharpWpfMvvmTemplate.Model.fsproj">
