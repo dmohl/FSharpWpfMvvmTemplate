@@ -8,7 +8,7 @@
     <UserControl.Resources>
         <ResourceDictionary Source="ApplicationResources.xaml" />
     </UserControl.Resources>
-    <Grid Margin="10,0,10,10">
+    <Grid Margin="10,0,10,10" VerticalAlignment="Stretch">
 
         <Grid.Resources>
             <!-- Name item template -->
@@ -43,7 +43,7 @@
         <Label Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource headerTextStyle}" >
             View Expense Report
         </Label>
-        <Grid Margin="10" Grid.Column="0" Grid.Row="1">
+        <Grid Margin="10" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top">
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition Height="Auto"/>
@@ -63,7 +63,7 @@
 
             <!-- View report button -->
         </Grid>
-        <Grid Margin="10" Grid.Column="1" Grid.Row="1" DataContext="{Binding SelectedExpenseReport}">
+        <Grid Margin="10" Grid.Column="1" Grid.Row="1" DataContext="{Binding SelectedExpenseReport}" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="57*" />
                 <ColumnDefinition Width="125*" />
@@ -75,7 +75,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
             <!-- Name -->
-            <StackPanel Grid.Column="0" Margin="0,60,0,0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
+            <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}">Name:</Label>
                 <Label Style="{StaticResource labelStyle}" Content="{Binding Path=Name}"></Label>
             </StackPanel>
