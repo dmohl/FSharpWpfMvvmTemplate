@@ -9,22 +9,18 @@
     <UserControl.Resources>
         <ResourceDictionary Source="ApplicationResources.xaml" />
     </UserControl.Resources>
-
     <Grid>
-
         <!--Templates to display expense report data-->
         <Grid.Resources>
             <!-- Reason item template -->
             <DataTemplate x:Key="typeItemTemplate">
-                <Label Content="{Binding XPath=@ExpenseType}"/>
+                <Label Content="{Binding Path=ExpenseType}"/>
             </DataTemplate>
             <!-- Amount item template -->
             <DataTemplate x:Key="amountItemTemplate">
-                <Label Content="{Binding XPath=@ExpenseAmount}"/>
+                <Label Content="{Binding Path=ExpenseAmount}"/>
             </DataTemplate>
         </Grid.Resources>
-
-
         <Grid.Background>
             <ImageBrush ImageSource="watermark.png" />
         </Grid.Background>
@@ -36,13 +32,10 @@
             <RowDefinition Height="Auto" />
             <RowDefinition />
         </Grid.RowDefinitions>
-
-
         <Label Grid.Column="1" Style="{StaticResource headerTextStyle}">
             Expense Report For:
         </Label>
         <Grid Margin="10" Grid.Column="1" Grid.Row="1">
-
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
                 <ColumnDefinition />
@@ -52,39 +45,27 @@
                 <RowDefinition Height="Auto" />
                 <RowDefinition />
             </Grid.RowDefinitions>
-
-
             <!-- Name -->
             <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0" Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}">Name:</Label>
-                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Name}"></Label>
+                <Label Style="{StaticResource labelStyle}" Content="{Binding Path=Name}"></Label>
             </StackPanel>
-
             <!-- Department -->
             <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal">
                 <Label Style="{StaticResource labelStyle}">Department:</Label>
-                <Label Style="{StaticResource labelStyle}" Content="{Binding XPath=@Department}"></Label>
+                <Label Style="{StaticResource labelStyle}" Content="{Binding Path=Department}"></Label>
             </StackPanel>
-
             <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left">
-
-
-
                 <!-- Expense type and Amount table -->
-                <DataGrid ItemsSource="{Binding XPath=Expense}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" >
-
+                <DataGrid ItemsSource="{Binding Path=Expense}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" >
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="ExpenseType" Binding="{Binding XPath=@ExpenseType}"  />
-                        <DataGridTextColumn Header="Amount" Binding="{Binding XPath=@ExpenseAmount}" />
+                        <DataGridTextColumn Header="ExpenseType" Binding="{Binding Path=ExpenseType}"  />
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Path=ExpenseAmount}" />
                     </DataGrid.Columns>
-
                 </DataGrid>
-
             </Grid>
         </Grid>
-
     </Grid>
-
 </UserControl>
 
 

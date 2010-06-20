@@ -45,12 +45,13 @@
         </Border>
 
         <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
-                 ItemsSource="{Binding Path=Expenses}"
-                 ItemTemplate="{StaticResource nameItemTemplate}">
+                 ItemsSource="{Binding Path=ExpenseReports}"
+                 ItemTemplate="{StaticResource nameItemTemplate}"
+                 IsSynchronizedWithCurrentItem="True">
         </ListBox>
 
         <!-- View report button -->
-        <Button Grid.Column="1" Grid.Row="3" Command="{Binding ViewCommand}" Style="{StaticResource buttonStyle}">View</Button>
+        <Button Grid.Column="1" Grid.Row="3" Command="{Binding ViewExpenseReportCommand}" Style="{StaticResource buttonStyle}">View</Button>
     </Grid>
 </UserControl>
  

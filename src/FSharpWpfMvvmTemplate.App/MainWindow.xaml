@@ -5,7 +5,5 @@
     <Window.Resources>
         <ResourceDictionary Source="ApplicationResources.xaml" />
     </Window.Resources>
-
-    <Frame Source="{Binding Path=SelectedView}" />
-
+    <ContentControl Content="{Binding Path=SelectedView}"/>
 </Window>

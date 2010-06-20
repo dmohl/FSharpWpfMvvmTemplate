@@ -9,9 +9,17 @@ open System.ComponentModel
 open System.Collections.ObjectModel
 open FSharpWpfMvvmTemplate.Model
 
-type ExpenseItHomeViewModel() =   
-    inherit ViewModelBase() 
-    let BuildExpenses() = 
+type ExpenseItHomeViewModel =   
+    [<DefaultValue(false)>] val mutable _collectionView : ICollectionView
+    [<DefaultValue(false)>] val mutable _expenseReports : ObservableCollection<Person>
+    new () as x = {_expenseReports = new ObservableCollection<Person>(); 
+                   _collectionView = null } then x.Initialize()
+    inherit ViewModelBase
+    member x.Initialize() =
+        x._expenseReports <- x.BuildExpenseReports()
+        x._collectionView <- CollectionViewSource.GetDefaultView(x._expenseReports)
+        x._collectionView.CurrentChanged.AddHandler(new EventHandler(x.OnCollectionViewCurrentChanged)) 
+    member x.BuildExpenseReports() = 
         let collection = new ObservableCollection<Person>()
         let mike = {Name="Mike" 
                     Department="Legal" 
@@ -46,10 +54,10 @@ type ExpenseItHomeViewModel() =
                           ExpenseAmount="100"}]}
         collection.Add(mary)
         collection
-    member x.Expenses : ObservableCollection<Person> = 
-        BuildExpenses()
-    member x.ViewCommand = 
-        new RelayCommand ((fun canExecute -> true), (fun action -> x.ShowMessage)) 
-
-    member public x.ShowMessage = do MessageBox.Show("test") |> ignore
-
+    member x.ExpenseReports : ObservableCollection<Person> = x._expenseReports
+    member x.ViewExpenseReportCommand = 
+        new RelayCommand ((fun canExecute -> true), (fun action -> x.ShowExpenseReport)) 
+    member x.SelectedExpenseReport = x._collectionView.CurrentItem :?> Person
+    member x.OnCollectionViewCurrentChanged (sender:obj) (e:EventArgs) =
+        x.OnPropertyChanged "SelectedExpenseReport"
+    member public x.ShowExpenseReport = do MessageBox.Show("test") |> ignore

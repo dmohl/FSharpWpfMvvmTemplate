@@ -8,16 +8,16 @@ open System.Windows.Input
 open System.ComponentModel
 
 type MainWindowViewModel =
-    [<DefaultValue(false)>] val mutable _views : ObservableCollection<string>   
-    new() as x = {_views = new ObservableCollection<string>()} then x.Initialize()
+    [<DefaultValue(false)>] val mutable _views : ObservableCollection<ViewModelBase>   
+    new() as x = {_views = new ObservableCollection<ViewModelBase>()} then x.Initialize()
     member x.Initialize() =
-        let defaultView = "ExpenseItHome.xaml"
+        let defaultView = new ExpenseItHomeViewModel()
         x._views.Add(defaultView)              
-        x._views.Add("ExpenseReport.xaml") 
+        x._views.Add(new ExpenseReportViewModel()) 
         x.SetActiveView defaultView
     member x.SelectedView = 
         let collectionView = CollectionViewSource.GetDefaultView x.Views
-        collectionView.CurrentItem :?> string
+        collectionView.CurrentItem :?> ViewModelBase
     member x.Views = x._views
     member x.SetActiveView view =
         let collectionView = CollectionViewSource.GetDefaultView x.Views

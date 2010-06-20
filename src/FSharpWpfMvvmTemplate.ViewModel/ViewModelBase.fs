@@ -6,14 +6,9 @@ open System.Windows.Input
 open System.ComponentModel
 
 type ViewModelBase() =
-    let requestCloseEvent = new DelegateEvent<EventHandler>()
-    let mutable _closeCommand : ICommand = null
+    let propertyChangedEvent = new DelegateEvent<PropertyChangedEventHandler>()
     [<CLIEvent>]
-    member x.RequestClose = requestCloseEvent.Publish
-    member x.OnRequestClose () = requestCloseEvent.Trigger([| x; System.EventArgs.Empty |])
-    member x.CloseModalCommand 
-        with get() = 
-            if _closeCommand = null then
-                _closeCommand <- new RelayCommand ((fun canExecute -> true), (fun action -> x.OnRequestClose())) 
-            _closeCommand
+    member x.PropertyChanged = propertyChangedEvent.Publish
+    member x.OnPropertyChanged propertyName = 
+        propertyChangedEvent.Trigger([| x; new PropertyChangedEventArgs(propertyName) |])
         
