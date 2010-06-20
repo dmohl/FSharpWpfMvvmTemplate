@@ -12,13 +12,8 @@ open FSharpWpfMvvmTemplate.Model
 type ExpenseItHomeViewModel =   
     [<DefaultValue(false)>] val mutable _collectionView : ICollectionView
     [<DefaultValue(false)>] val mutable _expenseReports : ObservableCollection<ExpenseReport>
-    [<DefaultValue(false)>] val mutable _selectedExpenseReport : ExpenseReport
     new () as x = {_expenseReports = new ObservableCollection<ExpenseReport>(); 
-                   _collectionView = null;
-                   _selectedExpenseReport = {Name="" 
-                                             Department="" 
-                                             ExpenseLineItems = []}
-                  } then x.Initialize()
+                   _collectionView = null} then x.Initialize()
     inherit ViewModelBase
     member x.Initialize() =
         x._expenseReports <- x.BuildExpenseReports()
@@ -63,8 +58,7 @@ type ExpenseItHomeViewModel =
     member x.ExpenseReports : ObservableCollection<ExpenseReport> = x._expenseReports
     member x.ApproveExpenseReportCommand = 
         new RelayCommand ((fun canExecute -> true), (fun action -> x.ApproveExpenseReport)) 
-    member x.SelectedExpenseReport 
-        with get () = x._selectedExpenseReport 
-        and set value = x._selectedExpenseReport <- value
+    member x.SelectedExpenseReport =
+        x._collectionView.CurrentItem :?> ExpenseReport
     member x.ApproveExpenseReport = 
         MessageBox.Show(sprintf "Expense report approved for %s" x.SelectedExpenseReport.Name) |> ignore

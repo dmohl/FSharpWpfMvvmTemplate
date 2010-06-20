@@ -58,8 +58,7 @@
             <ListBox Name="peopleListBox" Grid.Row="2" 
                  ItemsSource="{Binding Path=ExpenseReports}"
                  ItemTemplate="{StaticResource nameItemTemplate}"
-                 IsSynchronizedWithCurrentItem="True"
-                 SelectedItem="{Binding Path=SelectedExpenseReport, Mode=TwoWay}">
+                 IsSynchronizedWithCurrentItem="True">
             </ListBox>
 
             <!-- View report button -->
