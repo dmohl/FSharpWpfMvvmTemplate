@@ -86,7 +86,7 @@
             </StackPanel>
             <Grid Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left">
                 <!-- Expense type and Amount table -->
-                <DataGrid ItemsSource="{Binding Path=ExpenseLineItems}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" >
+                <DataGrid ItemsSource="{Binding Path=ExpenseLineItems}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" Margin="0,0,-139,0">
                     <DataGrid.Columns>
                         <DataGridTextColumn Header="ExpenseType" Binding="{Binding Path=ExpenseType}"  />
                         <DataGridTextColumn Header="Amount" Binding="{Binding Path=ExpenseAmount}" />
@@ -94,7 +94,7 @@
                 </DataGrid>
             </Grid>
         </Grid>
-        <Button Grid.Row="2" Command="{Binding ApproveExpenseReportCommand}" Style="{StaticResource buttonStyle}" Grid.Column="1" Margin="0,10,0,0">Approve</Button>
+        <Button Grid.Row="2" Command="{Binding ApproveExpenseReportCommand}" Style="{StaticResource buttonStyle}" Grid.Column="1" Margin="0,10,53,0">Approve</Button>
     </Grid>
 </UserControl>
  
