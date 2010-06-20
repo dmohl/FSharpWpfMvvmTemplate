@@ -6,35 +6,48 @@ open System.Windows
 open System.Windows.Data
 open System.Windows.Input
 open System.ComponentModel
+open System.Collections.ObjectModel
+open FSharpWpfMvvmTemplate.Model
 
 type ExpenseItHomeViewModel() =   
     inherit ViewModelBase() 
-    member x.ExpenseData = 
-        let doc = new XmlDocument()
-        doc.LoadXml(
-            "<Expenses xmlns=\"\">
-                <Person Name=\"Mike\" Department=\"Legal\">
-                    <Expense ExpenseType=\"Lunch\" ExpenseAmount=\"50\" />
-                    <Expense ExpenseType=\"Transportation\" ExpenseAmount=\"50\" />
-                </Person>
-                <Person Name=\"Lisa\" Department=\"Marketing\">
-                    <Expense ExpenseType=\"Document printing\"
-                        ExpenseAmount=\"50\"/>
-                    <Expense ExpenseType=\"Gift\" ExpenseAmount=\"125\" />
-                </Person>
-                <Person Name=\"John\" Department=\"Engineering\">
-                    <Expense ExpenseType=\"Magazine subscription\" 
-                        ExpenseAmount=\"50\"/>
-                    <Expense ExpenseType=\"New machine\" ExpenseAmount=\"600\" />
-                    <Expense ExpenseType=\"Software\" ExpenseAmount=\"500\" />
-                </Person>
-                <Person Name=\"Mary\" Department=\"Finance\">
-                    <Expense ExpenseType=\"Dinner\" ExpenseAmount=\"100\" />
-                </Person>
-            </Expenses>")
-        let xmlProvider = new XmlDataProvider()
-        xmlProvider.Document <- doc
-        xmlProvider
+    let BuildExpenses() = 
+        let collection = new ObservableCollection<Person>()
+        let mike = {Name="Mike" 
+                    Department="Legal" 
+                    ExpenseLineItems = 
+                        [{ExpenseType="Lunch" 
+                          ExpenseAmount="50"};
+                        {ExpenseType="Transportation" 
+                         ExpenseAmount="50"}]}
+        collection.Add(mike)
+        let lisa = {Name="Lisa"
+                    Department="Marketing" 
+                    ExpenseLineItems = 
+                        [{ExpenseType="Document printing" 
+                          ExpenseAmount="50"};
+                        {ExpenseType="Gift" 
+                         ExpenseAmount="125"}]}
+        collection.Add(lisa)
+        let john = {Name="John" 
+                    Department="Engineering"
+                    ExpenseLineItems = 
+                        [{ExpenseType="Magazine subscription" 
+                          ExpenseAmount="50"};
+                        {ExpenseType="New machine" 
+                         ExpenseAmount="600"};
+                        {ExpenseType="Software" 
+                         ExpenseAmount="500"}]}
+        collection.Add(john)
+        let mary = {Name="Mary"
+                    Department="Finance"
+                    ExpenseLineItems = 
+                        [{ExpenseType="Dinner" 
+                          ExpenseAmount="100"}]}
+        collection.Add(mary)
+        collection
+    member x.Expenses : ObservableCollection<Person> = 
+        BuildExpenses()
     member x.ViewCommand = 
         new RelayCommand ((fun canExecute -> true), (fun action -> x.ShowMessage)) 
 

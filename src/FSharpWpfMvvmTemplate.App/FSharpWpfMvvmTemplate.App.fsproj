@@ -45,6 +45,11 @@
     <Resource Include="ExpenseReport.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FSharpWpfMvvmTemplate.Model\FSharpWpfMvvmTemplate.Model.fsproj">
+      <Name>FSharpWpfMvvmTemplate.Model</Name>
+      <Project>{e3081f02-f50c-4923-984a-4d17bfe0dda8}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <Reference Include="Accessibility" />
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core" />

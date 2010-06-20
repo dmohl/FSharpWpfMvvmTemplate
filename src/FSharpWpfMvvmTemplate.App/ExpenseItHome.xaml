@@ -11,36 +11,9 @@
     <Grid Margin="10,0,10,10">
 
         <Grid.Resources>
-
-            <!-- Expense Report Data -->
-            <XmlDataProvider x:Key="ExpenseDataSource" XPath="Expenses">
-                <x:XData>
-                    <Expenses xmlns="">
-                        <Person Name="Mike" Department="Legal">
-                            <Expense ExpenseType="Lunch" ExpenseAmount="50" />
-                            <Expense ExpenseType="Transportation" ExpenseAmount="50" />
-                        </Person>
-                        <Person Name="Lisa" Department="Marketing">
-                            <Expense ExpenseType="Document printing"
-                  ExpenseAmount="50"/>
-                            <Expense ExpenseType="Gift" ExpenseAmount="125" />
-                        </Person>
-                        <Person Name="John" Department="Engineering">
-                            <Expense ExpenseType="Magazine subscription" 
-                 ExpenseAmount="50"/>
-                            <Expense ExpenseType="New machine" ExpenseAmount="600" />
-                            <Expense ExpenseType="Software" ExpenseAmount="500" />
-                        </Person>
-                        <Person Name="Mary" Department="Finance">
-                            <Expense ExpenseType="Dinner" ExpenseAmount="100" />
-                        </Person>
-                    </Expenses>
-                </x:XData>
-            </XmlDataProvider>
-
             <!-- Name item template -->
             <DataTemplate x:Key="nameItemTemplate">
-                <Label Content="{Binding XPath=@Name}"/>
+                <Label Content="{Binding Path=Name}"/>
             </DataTemplate>
 
         </Grid.Resources>
@@ -72,15 +45,12 @@
         </Border>
 
         <ListBox Name="peopleListBox" Grid.Column="1" Grid.Row="2" 
-                 ItemsSource="{Binding Source={StaticResource ExpenseDataSource}, XPath=Person}"
+                 ItemsSource="{Binding Path=Expenses}"
                  ItemTemplate="{StaticResource nameItemTemplate}">
         </ListBox>
 
         <!-- View report button -->
         <Button Grid.Column="1" Grid.Row="3" Command="{Binding ViewCommand}" Style="{StaticResource buttonStyle}">View</Button>
-
-
     </Grid>
-
 </UserControl>
  

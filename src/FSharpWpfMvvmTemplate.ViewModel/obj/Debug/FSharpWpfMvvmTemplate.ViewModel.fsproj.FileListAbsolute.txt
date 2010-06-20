@@ -4,3 +4,6 @@ C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.ViewModel\bin\Debug\FShar
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.ViewModel\bin\Debug\FSharpWpfMvvmTemplate.ViewModel.pdb
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.ViewModel\obj\Debug\FSharpWpfMvvmTemplate.ViewModel.dll
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.ViewModel\obj\Debug\FSharpWpfMvvmTemplate.ViewModel.pdb
+C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.ViewModel\bin\Debug\FSharpWpfMvvmTemplate.Model.dll
+C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.ViewModel\bin\Debug\FSharpWpfMvvmTemplate.Model.pdb
+C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.ViewModel\bin\Debug\FSharpWpfMvvmTemplate.Model.xml

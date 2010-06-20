@@ -8,3 +8,6 @@ C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\Resolve
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\FSharpWpfMvvmTemplate.App.exe
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\FSharpWpfMvvmTemplate.App.pdb
 C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\obj\x86\Debug\FSharpWpfMvvmTemplate.App.g.resources
+C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\bin\Debug\FSharpWpfMvvmTemplate.Model.dll
+C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\bin\Debug\FSharpWpfMvvmTemplate.Model.pdb
+C:\git\FSharpWpfMvvmTemplate\src\FSharpWpfMvvmTemplate.App\bin\Debug\FSharpWpfMvvmTemplate.Model.xml
