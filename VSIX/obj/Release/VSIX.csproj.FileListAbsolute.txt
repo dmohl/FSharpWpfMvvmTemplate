@@ -1,0 +1,7 @@
+C:\git\FSharpWpfMvvmTemplate\VSIX\bin\Release\ProjectTemplates\FSharpWpfMvvmTemplate.zip
+C:\git\FSharpWpfMvvmTemplate\VSIX\bin\Release\extension.vsixmanifest
+C:\git\FSharpWpfMvvmTemplate\VSIX\obj\Release\ResolveAssemblyReference.cache
+C:\git\FSharpWpfMvvmTemplate\VSIX\obj\Release\extension.vsixmanifest
+C:\git\FSharpWpfMvvmTemplate\VSIX\bin\Release\FSharpWpfMvvm.vsix
+C:\git\FSharpWpfMvvmTemplate\VSIX\obj\Release\FSharpWpfMvvm.dll
+C:\git\FSharpWpfMvvmTemplate\VSIX\obj\Release\FSharpWpfMvvm.pdb
