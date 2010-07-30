@@ -1,0 +1,13 @@
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\App.XML
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\App.exe
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\App.pdb
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\Model.dll
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\ViewModel.dll
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\Model.pdb
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\Model.xml
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\ViewModel.pdb
+C:\git\FSharpWpfMvvmTemplate\src\App\bin\Release\ViewModel.xml
+C:\git\FSharpWpfMvvmTemplate\src\App\obj\x86\Release\ResolveAssemblyReference.cache
+C:\git\FSharpWpfMvvmTemplate\src\App\obj\x86\Release\App.g.resources
+C:\git\FSharpWpfMvvmTemplate\src\App\obj\x86\Release\App.exe
+C:\git\FSharpWpfMvvmTemplate\src\App\obj\x86\Release\App.pdb

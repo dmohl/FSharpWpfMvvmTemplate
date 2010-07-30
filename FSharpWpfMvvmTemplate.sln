@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpWpfMvvmTemplate.ViewModel", "src\FSharpWpfMvvmTemplate.ViewModel\FSharpWpfMvvmTemplate.ViewModel.fsproj", "{622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "ViewModel", "src\ViewModel\ViewModel.fsproj", "{622F59E3-CD2A-4B26-9CD9-EEEB2CF5148A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpWpfMvvmTemplate.App", "src\FSharpWpfMvvmTemplate.App\FSharpWpfMvvmTemplate.App.fsproj", "{30597BE9-08F8-4832-8AB7-009C00A6A2F2}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "App", "src\App\App.fsproj", "{30597BE9-08F8-4832-8AB7-009C00A6A2F2}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpWpfMvvmTemplate.Model", "src\FSharpWpfMvvmTemplate.Model\FSharpWpfMvvmTemplate.Model.fsproj", "{E3081F02-F50C-4923-984A-4D17BFE0DDA8}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Model", "src\Model\Model.fsproj", "{E3081F02-F50C-4923-984A-4D17BFE0DDA8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VSIX", "VSIX\VSIX.csproj", "{70642574-D4DF-49CF-B4E4-56A2670EA126}"
 EndProject
