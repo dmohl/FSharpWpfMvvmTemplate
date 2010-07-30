@@ -8,7 +8,7 @@ open FSharpWpfMvvmTemplate.ViewModel
 
 // Create the View and bind it to the View Model
 let mainWindowViewModel = Application.LoadComponent(
-                             new System.Uri("/FSharpWpfMvvmTemplate.App;component/mainwindow.xaml", UriKind.Relative)) :?> Window
+                             new System.Uri("/App;component/mainwindow.xaml", UriKind.Relative)) :?> Window
 mainWindowViewModel.DataContext <- new MainWindowViewModel() :> obj
 
 // Application Entry point
