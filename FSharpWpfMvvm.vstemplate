@@ -5,6 +5,7 @@
         <Description>F# WPF MVVM Application</Description>
         <Icon>__TemplateIcon.ico</Icon>
         <ProjectType>FSharp</ProjectType>
+		<ProjectSubType>Windows</ProjectSubType>
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>
@@ -13,6 +14,9 @@
             </ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="ViewModel">
                 src\ViewModel\MyTemplate.vstemplate
+            </ProjectTemplateLink>
+            <ProjectTemplateLink ProjectName="Repository">
+                src\Repository\MyTemplate.vstemplate
             </ProjectTemplateLink>
             <ProjectTemplateLink ProjectName="Model">
                 src\Model\MyTemplate.vstemplate

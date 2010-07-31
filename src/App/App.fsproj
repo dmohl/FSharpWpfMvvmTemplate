@@ -65,6 +65,11 @@
     <Reference Include="UIAutomationProvider" />
     <Reference Include="UIAutomationTypes" />
     <Reference Include="WindowsBase" />
+    <ProjectReference Include="..\Repository\Repository.fsproj">
+      <Name>Repository</Name>
+      <Project>{a67e36b0-d568-42ea-ae8a-a9f1af6e0b35}</Project>
+      <Private>True</Private>
+    </ProjectReference>
     <ProjectReference Include="..\ViewModel\ViewModel.fsproj">
       <Name>ViewModel</Name>
       <Project>{622f59e3-cd2a-4b26-9cd9-eeeb2cf5148a}</Project>

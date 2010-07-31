@@ -5,3 +5,4 @@ C:\git\FSharpWpfMvvmTemplate\VSIX\bin\Release\FSharpWpfMvvm.vsix
 C:\git\FSharpWpfMvvmTemplate\VSIX\obj\Release\FSharpWpfMvvm.dll
 C:\git\FSharpWpfMvvmTemplate\VSIX\obj\Release\FSharpWpfMvvm.pdb
 C:\git\FSharpWpfMvvmTemplate\VSIX\bin\Release\ProjectTemplates\FSharpWpfMvvm.zip
+C:\git\FSharpWpfMvvmTemplate\VSIX\bin\Release\ExpenseItScreenShot.png
