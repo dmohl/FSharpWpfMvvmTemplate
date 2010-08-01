@@ -1,11 +1,11 @@
 <VSTemplate Version="2.0.0" Type="ProjectGroup"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
     <TemplateData>
-        <Name>F# WPF MVVM Application</Name>
-        <Description>F# WPF MVVM Application</Description>
+        <Name>F# WPF Application (MVVM)</Name>
+        <Description>F# WPF Application (MVVM)</Description>
         <Icon>__TemplateIcon.ico</Icon>
         <ProjectType>FSharp</ProjectType>
-		<ProjectSubType>Windows</ProjectSubType>
+		<ProjectSubType>WPF</ProjectSubType>
     </TemplateData>
     <TemplateContent>
         <ProjectCollection>
