@@ -14,7 +14,7 @@ type ExpenseItHomeViewModel(expenseReportRepository : ExpenseReportRepository) =
     inherit ViewModelBase()
     let mutable selectedExpenseReport = 
         {Name=""; Department=""; ExpenseLineItems = []}
-    new () = ExpenseItHomeViewModel(new ExpenseReportRepository())
+    new () = ExpenseItHomeViewModel(ExpenseReportRepository())
     member x.ExpenseReports = 
         new ObservableCollection<ExpenseReport>(
             expenseReportRepository.GetAll())

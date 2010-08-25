@@ -1,4 +1,4 @@
-﻿module FSharpWpfMvvmTemplate.Repository
+﻿namespace FSharpWpfMvvmTemplate.Repository
 
 open FSharpWpfMvvmTemplate.Model
 

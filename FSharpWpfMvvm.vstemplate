@@ -12,15 +12,6 @@
             <ProjectTemplateLink ProjectName="App">
                 src\App\MyTemplate.vstemplate
             </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="ViewModel">
-                src\ViewModel\MyTemplate.vstemplate
-            </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="Repository">
-                src\Repository\MyTemplate.vstemplate
-            </ProjectTemplateLink>
-            <ProjectTemplateLink ProjectName="Model">
-                src\Model\MyTemplate.vstemplate
-            </ProjectTemplateLink>
         </ProjectCollection>
     </TemplateContent>
 </VSTemplate>

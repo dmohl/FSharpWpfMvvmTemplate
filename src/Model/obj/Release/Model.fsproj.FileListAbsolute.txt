@@ -1,6 +1,0 @@
-C:\git\FSharpWpfMvvmTemplate\src\Model\bin\Release\Model.XML
-C:\git\FSharpWpfMvvmTemplate\src\Model\bin\Release\Model.dll
-C:\git\FSharpWpfMvvmTemplate\src\Model\bin\Release\Model.pdb
-C:\git\FSharpWpfMvvmTemplate\src\Model\obj\Release\ResolveAssemblyReference.cache
-C:\git\FSharpWpfMvvmTemplate\src\Model\obj\Release\Model.dll
-C:\git\FSharpWpfMvvmTemplate\src\Model\obj\Release\Model.pdb
