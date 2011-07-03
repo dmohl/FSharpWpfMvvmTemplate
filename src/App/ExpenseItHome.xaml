@@ -102,7 +102,7 @@
         <Button Grid.Row="2"  Command="{Binding RejectExpenseReportCommand}" Style="{StaticResource buttonStyle}" Grid.Column="0" Margin="0,10,0,0" Content="Reject">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseEnter">
-                    <Behavior:EventToCommand Command="{Binding MouseEnterButtonCommand}" />
+                    <Behavior:EventToCommand Command="{Binding MouseEnterButtonCommand}" CommandParameter="Reject" />
                 </i:EventTrigger>
                 <i:EventTrigger EventName="MouseLeave">
                     <Behavior:EventToCommand Command="{Binding MouseLeaveButtonCommand}" />
@@ -113,7 +113,7 @@
                 Grid.Column="1" Margin="0,10,53,0">
             <i:Interaction.Triggers>
                 <i:EventTrigger EventName="MouseEnter">
-                    <Behavior:EventToCommand Command="{Binding MouseEnterButtonCommand}" />
+                    <Behavior:EventToCommand Command="{Binding MouseEnterButtonCommand}" CommandParameter="Approve" />
                 </i:EventTrigger>
                 <i:EventTrigger EventName="MouseLeave">
                     <Behavior:EventToCommand Command="{Binding MouseLeaveButtonCommand}" />

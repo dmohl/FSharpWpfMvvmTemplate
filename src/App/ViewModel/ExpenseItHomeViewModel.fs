@@ -9,6 +9,7 @@ open System.ComponentModel
 open System.Collections.ObjectModel
 open FSharpWpfMvvmTemplate.Model
 open FSharpWpfMvvmTemplate.Repository
+open System.Reflection
 
 type ApprovalStatus =
     | Approved
@@ -19,37 +20,39 @@ type ExpenseItHomeViewModel(expenseReportRepository : ExpenseReportRepository) =
     let mutable lastApprovalDisplayMessage = ""
     let mutable selectedExpenseReport = 
         {Name=""; Department=""; ExpenseLineItems = []}
+    let handleApprovalAction (this:ExpenseItHomeViewModel) approvalStatus name =
+        match approvalStatus with
+        | ApprovalStatus.Approved -> 
+            this.LastApprovalDisplayMessage <- sprintf "Expense report approved for %s" name
+        | ApprovalStatus.Rejected ->
+            this.LastApprovalDisplayMessage <- sprintf "Expense report rejected for %s" name
     new () = ExpenseItHomeViewModel(ExpenseReportRepository())
     member x.ExpenseReports = 
         new ObservableCollection<ExpenseReport>(
             expenseReportRepository.GetAll())
-    member x.HandleApprovalAction approvalStatus name =
-        match approvalStatus with
-        | ApprovalStatus.Approved -> 
-            x.LastApprovalDisplayMessage <- sprintf "Expense report approved for %s" name
-        | ApprovalStatus.Rejected ->
-            x.LastApprovalDisplayMessage <- sprintf "Expense report rejected for %s" name
-    member x.ApproveExpenseReportCommand = 
-        new RelayCommand ((fun canExecute -> true), 
-            (fun action -> x.HandleApprovalAction ApprovalStatus.Approved x.SelectedExpenseReport.Name)) 
-    member x.RejectExpenseReportCommand = 
-        new RelayCommand ((fun canExecute -> true), 
-            (fun action -> x.HandleApprovalAction ApprovalStatus.Rejected x.SelectedExpenseReport.Name)) 
     member x.SelectedExpenseReport 
         with get () = selectedExpenseReport
-        and set value = 
-            selectedExpenseReport <- value
-            x.LastApprovalDisplayMessage <- ""
-            x.OnPropertyChanged "SelectedExpenseReport"
+        and set value = selectedExpenseReport <- value
+                        x.LastApprovalDisplayMessage <- ""
+                        x.OnPropertyChanged "SelectedExpenseReport"
     member x.LastApprovalDisplayMessage 
         with get() = lastApprovalDisplayMessage
         and set value = 
             lastApprovalDisplayMessage <- value 
             x.OnPropertyChanged "LastApprovalDisplayMessage"
+    member x.ApproveExpenseReportCommand = 
+        new RelayCommand ((fun canExecute -> true), 
+            (fun action -> handleApprovalAction x ApprovalStatus.Approved x.SelectedExpenseReport.Name)) 
+    member x.RejectExpenseReportCommand = 
+        new RelayCommand ((fun canExecute -> true), 
+            (fun action -> handleApprovalAction x ApprovalStatus.Rejected x.SelectedExpenseReport.Name)) 
     member x.MouseEnterButtonCommand =
         new RelayCommand ((fun _ -> true), 
             (fun value -> x.LastApprovalDisplayMessage <- 
-                              sprintf "Approve/Reject %s's expense report?" x.SelectedExpenseReport.Name))
+                              sprintf "%s %s's Expense Report?" (string value) x.SelectedExpenseReport.Name))
     member x.MouseLeaveButtonCommand =
+        // Note: This is just for example purposes. It does not exemplify how this should be done in a production app.
         new RelayCommand ((fun _ -> true), 
-            (fun value -> x.LastApprovalDisplayMessage <- ""))
+            (fun value -> 
+                if (not (x.LastApprovalDisplayMessage.StartsWith "Expense")) then
+                    x.LastApprovalDisplayMessage <- ""))

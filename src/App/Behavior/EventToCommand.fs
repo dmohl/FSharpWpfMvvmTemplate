@@ -18,7 +18,7 @@ type EventToCommand() =
     /// Set the command parameter dependency property
     static do 
         EventToCommand.CommandParameterProperty <-
-            DependencyProperty.Register("CommandParameter", typeof<ICommand>, typeof<EventToCommand>)
+            DependencyProperty.Register("CommandParameter", typeof<obj>, typeof<EventToCommand>)
     
     /// Get/Set the Command 
     member this.Command 
@@ -32,7 +32,6 @@ type EventToCommand() =
     
     /// Implement the Invoke method from TriggerAction to execute the command
     override this.Invoke parameter = 
-        this.Command.Execute(this.CommandParameter)
         let command = this.Command
         let commandParameter = match this.CommandParameter with
                                | null -> parameter
