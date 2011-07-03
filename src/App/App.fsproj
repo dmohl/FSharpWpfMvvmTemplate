@@ -38,8 +38,8 @@
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <ItemGroup>
-    <Compile Include="Converter\ConverterBase.fs" />
-    <Compile Include="Converter\StringExistsToVisibilityConverter.fs" />
+    <Compile Include="Behavior\ConverterBase.fs" />
+    <Compile Include="Behavior\StringExistsToVisibilityConverter.fs" />
     <Compile Include="Model\Expense.fs" />
     <Compile Include="Model\ExpenseReport.fs" />
     <Compile Include="Repository\ExpenseReportRepository.fs" />

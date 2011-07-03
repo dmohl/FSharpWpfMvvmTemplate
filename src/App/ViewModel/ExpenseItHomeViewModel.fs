@@ -39,6 +39,7 @@ type ExpenseItHomeViewModel(expenseReportRepository : ExpenseReportRepository) =
         with get () = selectedExpenseReport
         and set value = 
             selectedExpenseReport <- value
+            x.LastApprovalDisplayMessage <- ""
             x.OnPropertyChanged "SelectedExpenseReport"
     member x.LastApprovalDisplayMessage 
         with get() = lastApprovalDisplayMessage

@@ -2,7 +2,7 @@
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:scm="clr-namespace:System.ComponentModel;assembly=WindowsBase" 
       xmlns:ViewModel="clr-namespace:FSharpWpfMvvmTemplate.ViewModel;assembly=App" 
-      xmlns:Converter="clr-namespace:FSharpWpfMvvmTemplate.Converter;assembly=App"
+      xmlns:Behavior="clr-namespace:FSharpWpfMvvmTemplate.Behavior;assembly=App"
       mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignWidth="424">
     <UserControl.DataContext>
         <ViewModel:ExpenseItHomeViewModel></ViewModel:ExpenseItHomeViewModel>
@@ -13,7 +13,7 @@
     <Grid Margin="10,0,10,10" VerticalAlignment="Stretch">
 
         <Grid.Resources>
-            <Converter:StringExistsToVisibilityConverter x:Key="StringExistsToVisibility"/>
+            <Behavior:StringExistsToVisibilityConverter x:Key="StringExistsToVisibility"/>
             <!-- Name item template -->
             <DataTemplate x:Key="nameItemTemplate">
                 <Label Content="{Binding Path=Name}"/>

@@ -1,4 +1,4 @@
-﻿namespace FSharpWpfMvvmTemplate.Converter
+﻿namespace FSharpWpfMvvmTemplate.Behavior
 
 open System
 open System.Windows

@@ -63,7 +63,7 @@
 <member name="">
 
 </member>
-<member name="T:FSharpWpfMvvmTemplate.Converter.StringExistsToVisibilityConverter">
+<member name="T:FSharpWpfMvvmTemplate.Behavior.StringExistsToVisibilityConverter">
 <summary>
  Returns Visibility.Visible if the string is not null or empty
 </summary>
