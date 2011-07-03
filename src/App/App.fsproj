@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>Client</TargetFrameworkProfile>
     <Name>App</Name>
+    <ProjectTypeGuids>{5B89FCC2-C9F6-49a8-8F8D-EDDCC3FDC9E9};{f2a71f9b-5d33-465a-a702-920d77279786}</ProjectTypeGuids>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
     <DebugSymbols>true</DebugSymbols>
@@ -37,6 +38,8 @@
   <Import Project="$(MSBuildExtensionsPath32)\FSharp\1.0\Microsoft.FSharp.Targets" Condition="!Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <Import Project="$(MSBuildExtensionsPath32)\..\Microsoft F#\v4.0\Microsoft.FSharp.Targets" Condition=" Exists('$(MSBuildBinPath)\Microsoft.Build.Tasks.v4.0.dll')" />
   <ItemGroup>
+    <Compile Include="Converter\ConverterBase.fs" />
+    <Compile Include="Converter\StringExistsToVisibilityConverter.fs" />
     <Compile Include="Model\Expense.fs" />
     <Compile Include="Model\ExpenseReport.fs" />
     <Compile Include="Repository\ExpenseReportRepository.fs" />
