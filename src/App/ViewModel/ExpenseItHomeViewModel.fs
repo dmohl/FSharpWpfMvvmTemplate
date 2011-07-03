@@ -46,3 +46,10 @@ type ExpenseItHomeViewModel(expenseReportRepository : ExpenseReportRepository) =
         and set value = 
             lastApprovalDisplayMessage <- value 
             x.OnPropertyChanged "LastApprovalDisplayMessage"
+    member x.MouseEnterButtonCommand =
+        new RelayCommand ((fun _ -> true), 
+            (fun value -> x.LastApprovalDisplayMessage <- 
+                              sprintf "Approve/Reject %s's expense report?" x.SelectedExpenseReport.Name))
+    member x.MouseLeaveButtonCommand =
+        new RelayCommand ((fun _ -> true), 
+            (fun value -> x.LastApprovalDisplayMessage <- ""))
