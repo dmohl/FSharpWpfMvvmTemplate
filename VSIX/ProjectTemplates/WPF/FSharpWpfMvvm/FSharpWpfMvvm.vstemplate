@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<VSTemplate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Type="Project" Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>F# Windows App (WPF, MVVM)</Name>
+    <Description>F# Windows App (WPF, MVVM) with examples of event to command, value converter, relay command, etc.</Description>
+    <Icon>__Template_small.png</Icon>
+    <PreviewImage>__Template_large.png</PreviewImage>
+    <ProjectType>FSharp</ProjectType>
+    <ProjectSubType />
+    <SortOrder>1000</SortOrder>
+    <DefaultName>FWindowsAppWPFMVVM</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <LocationField>Enabled</LocationField>
+  </TemplateData>
+  <TemplateContent>
+    <Project File="App.fsproj" TargetFileName="App.fsproj" ReplaceParameters="true">
+      <ProjectItem TargetFileName="ConverterBase.fs" ReplaceParameters="false">Behavior\ConverterBase.fs</ProjectItem>
+      <ProjectItem TargetFileName="EventToCommand.fs" ReplaceParameters="false">Behavior\EventToCommand.fs</ProjectItem>
+      <ProjectItem TargetFileName="StringExistsToVisibilityConverter.fs" ReplaceParameters="false">Behavior\StringExistsToVisibilityConverter.fs</ProjectItem>
+      <ProjectItem TargetFileName="Expense.fs" ReplaceParameters="false">Model\Expense.fs</ProjectItem>
+      <ProjectItem TargetFileName="ExpenseReport.fs" ReplaceParameters="false">Model\ExpenseReport.fs</ProjectItem>
+      <ProjectItem TargetFileName="ExpenseReportRepository.fs" ReplaceParameters="false">Repository\ExpenseReportRepository.fs</ProjectItem>
+      <ProjectItem TargetFileName="ExpenseItHomeViewModel.fs" ReplaceParameters="false">ViewModel\ExpenseItHomeViewModel.fs</ProjectItem>
+      <ProjectItem TargetFileName="MainWindowViewModel.fs" ReplaceParameters="false">ViewModel\MainWindowViewModel.fs</ProjectItem>
+      <ProjectItem TargetFileName="RelayCommand.fs" ReplaceParameters="false">ViewModel\RelayCommand.fs</ProjectItem>
+      <ProjectItem TargetFileName="ViewModelBase.fs" ReplaceParameters="false">ViewModel\ViewModelBase.fs</ProjectItem>
+      <ProjectItem TargetFileName="App.fs" ReplaceParameters="false">App.fs</ProjectItem>
+      <ProjectItem TargetFileName="ApplicationResources.xaml" ReplaceParameters="true">ApplicationResources.xaml</ProjectItem>
+      <ProjectItem TargetFileName="ExpenseItHome.xaml" ReplaceParameters="true">ExpenseItHome.xaml</ProjectItem>
+      <ProjectItem TargetFileName="MainWindow.xaml" ReplaceParameters="true">MainWindow.xaml</ProjectItem>
+      <ProjectItem TargetFileName="watermark.png" ReplaceParameters="false">watermark.png</ProjectItem>
+    </Project>
+    <CustomParameters />
+  </TemplateContent>
+</VSTemplate>
