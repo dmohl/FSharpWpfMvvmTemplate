@@ -92,8 +92,8 @@
                 <!-- Expense type and Amount table -->
                 <DataGrid ItemsSource="{Binding Path=ExpenseLineItems}" ColumnHeaderStyle="{StaticResource columnHeaderStyle}" AutoGenerateColumns="False" RowHeaderWidth="0" Margin="0,0,-139,0">
                     <DataGrid.Columns>
-                        <DataGridTextColumn Header="ExpenseType" Binding="{Binding Path=ExpenseType}"  />
-                        <DataGridTextColumn Header="Amount" Binding="{Binding Path=ExpenseAmount}" />
+                        <DataGridTextColumn Header="ExpenseType" Binding="{Binding Path=ExpenseType}" IsReadOnly="True" />
+                        <DataGridTextColumn Header="Amount" Binding="{Binding Path=ExpenseAmount}" IsReadOnly="True" />
                     </DataGrid.Columns>
                 </DataGrid>
             </Grid>
