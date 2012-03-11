@@ -7,8 +7,12 @@
     </boolean>
   </SettingsComponent>
   <RecentFiles>
-    <RecentFiles />
-    <RecentEdits />
+    <RecentFiles>
+      <File id="d:Miscellaneous Files/f:App.fsproj/l:C!?git?FSharpWpfMvvmTemplate?src?App?App.fsproj" caret="693" fromTop="12" />
+    </RecentFiles>
+    <RecentEdits>
+      <File id="d:Miscellaneous Files/f:App.fsproj/l:C!?git?FSharpWpfMvvmTemplate?src?App?App.fsproj" caret="693" fromTop="12" />
+    </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
     <NAntPath value="" />
