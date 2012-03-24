@@ -51,3 +51,7 @@ C:\Users\dmohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mo
 C:\Users\dmohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mohl\F# Windows App (WPF, MVVM)\1.10\\ExpenseItScreenShot.png
 C:\Users\dmohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mohl\F# Windows App (WPF, MVVM)\1.10\\MicrosoftPublicLicense.txt
 C:\Users\dmohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mohl\F# Windows App (WPF, MVVM)\1.10\ProjectTemplates\WPF\\FSharpWpfMvvm.zip
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mohl\F# Windows App (WPF, MVVM)\1.11\\extension.vsixmanifest
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mohl\F# Windows App (WPF, MVVM)\1.11\\ExpenseItScreenShot.png
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mohl\F# Windows App (WPF, MVVM)\1.11\\MicrosoftPublicLicense.txt
+C:\Users\Daniel Mohl\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Daniel Mohl\F# Windows App (WPF, MVVM)\1.11\ProjectTemplates\WPF\\FSharpWpfMvvm.zip
